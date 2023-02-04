@@ -6,9 +6,10 @@
 'to keep things in accordance with DRY. Keeps functions nice and reusable. Another implication would be to debug. Eric often uses console.log() to check parts of his code. '
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    let volume = num * num * num;
+    console.log('This is hopefully the volume: ' + volume);
 }
-
+console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
