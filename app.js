@@ -9,7 +9,7 @@ function calculateCube(num) {
     let volume = num * num * num;
     console.log('This is hopefully the volume: ' + volume);
 };
-console.log(calculateCube(5));
+calculateCube(5);
 // 3. isAVowel
 function isAVowel(letter) {
     letter = letter.toLowerCase();      //turns input into lowercase otherwise things get weird with caps
@@ -40,14 +40,23 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num <= 1) return false;    //is number is less than 1 cant be primee
+    for (let i = 2; i <= Math.sqrt(num); i++){  //iterate numbs 2 - square root of input num
+      if (num % i == 0) { return false;    //if num has remainder of 0 at current loop then it's not prime 
+    }
 }
-
+    return true;                  //if input num made it this far it is in fact prime
+}
+console.log(checkPrime(97));
 // 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
+function printPrimes(num) {          //num is max number to check for primes
+   for (let i = 2; i <= num; i++){    //iterates from 2 to num
+    if (checkPrime(i)) {             //iterates through checkPrime func, if true console.logs result
+        console.log(i);      
+    }
+   }   
 }
-
+printPrimes(97);    
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
