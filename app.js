@@ -58,9 +58,17 @@ function printPrimes(num) {          //num is max number to check for primes
 }
 printPrimes(97);    
 // 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
+function printLongestWord(arr) {    //arr of strings as input
+    let longestWord = "";          //empty string to track longest word so far in following loop
+    for (let i = 0; i < arr.length; i++) {       //iterates thru length of string in arr
+           if (arr[i].length > longestWord.length) {   //checks length of current arr vs longestword stored
+            longestWord = arr[i];                      //if current string is longer than stored, longest word is updated
+        }                                              //ONLY updates if LONGER than current string so tie goes to first in arr
+    }
+    return longestWord;                               
 }
+
+console.log(printLongestWord(["BoJack", "Peanutbunner", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
