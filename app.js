@@ -8,23 +8,24 @@
 function calculateCube(num) {
     let volume = num * num * num;
     console.log('This is hopefully the volume: ' + volume);
-}
+};
 console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
-    letter = letter.toLowerCase();
-    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+    letter = letter.toLowerCase();      //turns input into lowercase otherwise things get weird with caps
+    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') //these are my lil vowels
     return true;
     else return false; 
 
 };
-console.log(isAVowel('a'));
+console.log(isAVowel('A'));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
-}
+    return [word1.length, word2.length]; // [] = return an array 
+}                                        // .length returns length of parameters/arguments
 
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
