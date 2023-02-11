@@ -54,7 +54,7 @@ console.log(isAVowel("a"));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     return [word1.length, word2.length];
-}
+};
 console.log(getTwoLengths("Aaron", "Yorks"));
 
 
@@ -73,8 +73,6 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 // 6.1 checkPrime
-function checkPrime(num) {
-
 
 function checkPrime(num) {
 for (let i=2; 1 < Math.sqrt(num); i++) {
@@ -103,7 +101,7 @@ function printPrimes(num) {
 // 7. printLongestWord
 function printLongestWord(arr) {
    let longestWord = "";
-   for (let i = o; i <arr.length; i++) {
+   for (let i = 0; i <arr.length; i++) {
     if (arr[i].length > longestWord.length) {
         longestWord = arr[i]
     }
@@ -134,15 +132,15 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
